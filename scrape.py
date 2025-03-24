@@ -8,6 +8,18 @@ import logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# Configure Chrome options to run headless
+chrome_options = Options()
+chrome_options.add_argument('--headless')  # Run in headless mode
+chrome_options.add_argument('--no-sandbox')  # Disable sandboxing (required for Docker environments)
+chrome_options.add_argument('--disable-dev-shm-usage')  # Overcome limited resources in Docker
+
+# Specify path to ChromeDriver
+driver = webdriver.Chrome(
+    service=Service(ChromeDriverManager().install()),
+    options=chrome_options
+)
+
 def scrape_website(website):
     """Scrapes website content using a headless Chrome browser."""
     logger.info("Launching Chrome browser...")
