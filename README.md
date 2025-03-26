@@ -24,7 +24,10 @@ A simple and efficient AI Web Scraper built using Selenium for extracting websit
 
 1. **Clone the Repository**:
 
-    Clone this repository to your local machine using Git.
+    ```bash
+    git clone https://github.com/your-username/ai-web-scraper.git
+    cd ai-web-scraper
+    ```
 
 2. **Install Dependencies**:
 
