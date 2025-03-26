@@ -90,3 +90,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - BeautifulSoup: For parsing and cleaning HTML.
 - Google API: For additional data processing.
 - ChromeDriver: Required for Selenium to control Chrome.
+  
+---
+📩 **Let's connect!** If you have any feedback or suggestions, feel free to reach out.
+
